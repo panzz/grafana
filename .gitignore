@@ -149,3 +149,6 @@ compilation-stats.json
 
 # auto generated Go files
 *_gen.go
+
+public/locales/_build/
+public/locales/**/*.js
