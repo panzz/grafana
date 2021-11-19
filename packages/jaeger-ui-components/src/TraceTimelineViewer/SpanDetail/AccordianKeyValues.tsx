@@ -13,8 +13,7 @@
 // limitations under the License.
 
 import * as React from 'react';
-import IoIosArrowDown from 'react-icons/lib/io/ios-arrow-down';
-import IoIosArrowRight from 'react-icons/lib/io/ios-arrow-right';
+import { IoChevronDown, IoChevronForward } from 'react-icons/io5';
 import { css } from '@emotion/css';
 import cx from 'classnames';
 
@@ -128,7 +127,7 @@ export default function AccordianKeyValues(props: AccordianKeyValuesProps) {
   let arrow: React.ReactNode | null = null;
   let headerProps: {} | null = null;
   if (interactive) {
-    arrow = isOpen ? <IoIosArrowDown className={iconCls} /> : <IoIosArrowRight className={iconCls} />;
+    arrow = isOpen ? <IoChevronDown className={iconCls} /> : <IoChevronForward className={iconCls} />;
     headerProps = {
       'aria-checked': isOpen,
       onClick: isEmpty ? null : onToggle,

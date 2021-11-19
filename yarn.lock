@@ -2929,7 +2929,6 @@ __metadata:
     "@types/hoist-non-react-statics": ^3.3.1
     "@types/lodash": ^4.14.123
     "@types/react": 17.0.30
-    "@types/react-icons": 2.2.7
     "@types/recompose": ^0.30.7
     "@types/reselect": 2.2.0
     "@types/slate-react": 0.22.5
@@ -8355,25 +8354,6 @@ __metadata:
   dependencies:
     "@types/react": "*"
   checksum: 76328171b0caed98cd143cbde527cfe943f079337e3688435843bf5c1466fd67c8068edc2d0c66b0cb794319ef9bbf4a16f0d5c6a271423b8ff11980d80c8156
-  languageName: node
-  linkType: hard
-
-"@types/react-icon-base@npm:*":
-  version: 2.1.4
-  resolution: "@types/react-icon-base@npm:2.1.4"
-  dependencies:
-    "@types/react": "*"
-  checksum: 67b5d22c6234946b2b2dd137e75902642762248da190fbf3110f0d4c101fc435e19cc4a19866887868e77ef9ce4e5cdc2eb899a52ae5103f143de1ab6aaef85b
-  languageName: node
-  linkType: hard
-
-"@types/react-icons@npm:2.2.7":
-  version: 2.2.7
-  resolution: "@types/react-icons@npm:2.2.7"
-  dependencies:
-    "@types/react": "*"
-    "@types/react-icon-base": "*"
-  checksum: b395741c537820af5b75852eed7909d203956711a296bebb8103f6e62ced9f6b4876805b4128a5b9a15f4566d2a63e3bedd6b565be5963b940e97c57c86d4db9
   languageName: node
   linkType: hard
 

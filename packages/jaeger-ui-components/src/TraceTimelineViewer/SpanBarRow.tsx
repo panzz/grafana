@@ -13,10 +13,10 @@
 // limitations under the License.
 
 import * as React from 'react';
-import IoAlert from 'react-icons/lib/io/alert';
-import IoArrowRightA from 'react-icons/lib/io/arrow-right-a';
-import IoNetwork from 'react-icons/lib/io/network';
-import MdFileUpload from 'react-icons/lib/md/file-upload';
+import { IoAlert } from 'react-icons/io5';
+import { GoArrowRight } from 'react-icons/go';
+import { IoMdGitNetwork } from 'react-icons/io';
+import { MdFileUpload } from 'react-icons/md';
 import { css } from '@emotion/css';
 import cx from 'classnames';
 
@@ -423,13 +423,13 @@ export class UnthemedSpanBarRow extends React.PureComponent<SpanBarRowProps> {
                 {serviceName}{' '}
                 {rpc && (
                   <span>
-                    <IoArrowRightA /> <i className={styles.rpcColorMarker} style={{ background: rpc.color }} />
+                    <GoArrowRight /> <i className={styles.rpcColorMarker} style={{ background: rpc.color }} />
                     {rpc.serviceName}
                   </span>
                 )}
                 {noInstrumentedServer && (
                   <span>
-                    <IoArrowRightA />{' '}
+                    <GoArrowRight />{' '}
                     <i className={styles.rpcColorMarker} style={{ background: noInstrumentedServer.color }} />
                     {noInstrumentedServer.serviceName}
                   </span>
@@ -474,7 +474,7 @@ export class UnthemedSpanBarRow extends React.PureComponent<SpanBarRowProps> {
                 tooltipText="Contains multiple references"
                 focusSpan={focusSpan}
               >
-                <IoNetwork />
+                <IoMdGitNetwork />
               </ReferencesButton>
             )}
             {span.subsidiarilyReferencedBy && span.subsidiarilyReferencedBy.length > 0 && (

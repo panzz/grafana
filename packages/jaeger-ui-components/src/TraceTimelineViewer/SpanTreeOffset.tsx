@@ -14,8 +14,7 @@
 
 import React from 'react';
 import { get as _get } from 'lodash';
-import IoChevronRight from 'react-icons/lib/io/chevron-right';
-import IoIosArrowDown from 'react-icons/lib/io/ios-arrow-down';
+import { IoChevronForward, IoChevronDown } from 'react-icons/io5';
 import { css } from '@emotion/css';
 import cx from 'classnames';
 
@@ -136,7 +135,7 @@ export class UnthemedSpanTreeOffset extends React.PureComponent<TProps> {
     const { childrenVisible, onClick, showChildrenIcon, span, theme } = this.props;
     const { hasChildren, spanID } = span;
     const wrapperProps = hasChildren ? { onClick, role: 'switch', 'aria-checked': childrenVisible } : null;
-    const icon = showChildrenIcon && hasChildren && (childrenVisible ? <IoIosArrowDown /> : <IoChevronRight />);
+    const icon = showChildrenIcon && hasChildren && (childrenVisible ? <IoChevronDown /> : <IoChevronForward />);
     const styles = getStyles(theme);
     return (
       <span className={cx(styles.SpanTreeOffset, { [styles.SpanTreeOffsetParent]: hasChildren })} {...wrapperProps}>

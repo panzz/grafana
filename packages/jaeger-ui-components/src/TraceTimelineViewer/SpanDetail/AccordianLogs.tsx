@@ -14,8 +14,7 @@
 
 import * as React from 'react';
 import { sortBy as _sortBy } from 'lodash';
-import IoIosArrowDown from 'react-icons/lib/io/ios-arrow-down';
-import IoIosArrowRight from 'react-icons/lib/io/ios-arrow-right';
+import { IoChevronDown, IoChevronForward } from 'react-icons/io5';
 import { css } from '@emotion/css';
 
 import AccordianKeyValues from './AccordianKeyValues';
@@ -73,7 +72,7 @@ export default function AccordianLogs(props: AccordianLogsProps) {
   let HeaderComponent: 'span' | 'a' = 'span';
   let headerProps: {} | null = null;
   if (interactive) {
-    arrow = isOpen ? <IoIosArrowDown className={uAlignIcon} /> : <IoIosArrowRight className="u-align-icon" />;
+    arrow = isOpen ? <IoChevronDown className={uAlignIcon} /> : <IoChevronForward className="u-align-icon" />;
     HeaderComponent = 'a';
     headerProps = {
       'aria-checked': isOpen,

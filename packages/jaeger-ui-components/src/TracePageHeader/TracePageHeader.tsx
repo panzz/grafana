@@ -14,7 +14,7 @@
 
 import * as React from 'react';
 import { get as _get, maxBy as _maxBy, values as _values } from 'lodash';
-import MdKeyboardArrowRight from 'react-icons/lib/md/keyboard-arrow-right';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 import { css } from '@emotion/css';
 import cx from 'classnames';
 

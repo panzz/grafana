@@ -14,7 +14,7 @@
 
 import * as React from 'react';
 import cx from 'classnames';
-import IoAndroidLocate from 'react-icons/lib/io/android-locate';
+import { IoMdLocate } from 'react-icons/io';
 import { css } from '@emotion/css';
 
 import * as markers from './TracePageSearchBar.markers';
@@ -113,7 +113,7 @@ export default memo(function TracePageSearchBar(props: TracePageSearchBarProps) 
                   htmlType="button"
                   onClick={focusUiFindMatches}
                 >
-                  <IoAndroidLocate />
+                  <IoMdLocate />
                 </UIButton>
                 <UIButton
                   className={btnClass}

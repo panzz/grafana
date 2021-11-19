@@ -14,7 +14,7 @@
 
 import React from 'react';
 import cx from 'classnames';
-import IoAndroidOpen from 'react-icons/lib/io/android-open';
+import { IoMdOpen } from 'react-icons/io';
 import { css } from '@emotion/css';
 
 import { createStyle } from '../Theme';
@@ -37,7 +37,7 @@ export default function NewWindowIcon(props: Props) {
   const { isLarge, className, ...rest } = props;
   const styles = getStyles();
   const cls = cx({ [styles.NewWindowIconLarge]: isLarge }, className);
-  return <IoAndroidOpen className={cls} {...rest} />;
+  return <IoMdOpen className={cls} {...rest} />;
 }
 
 NewWindowIcon.defaultProps = {
